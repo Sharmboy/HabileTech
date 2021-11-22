@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To Verifying the login page to entering the all pages",
+        "description": "",
+        "id": "to-verify-the-cloud-bank-login-page;to-verifying-the-login-page-to-entering-the-all-pages",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5463755599,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Cloud Banking login page",
+            "match": {
+              "location": "StepDefinitionClass.userIsOnCloudBankingLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5624455900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should enter \"qatest@habile.in/Qatest123$\" and \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qatest@habile.in/Qatest123$\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"12345\"",
+                  "offset": 52
+                }
+              ],
+              "location": "StepDefinitionClass.userShouldEnterAnd(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144934900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should click the login button",
+            "match": {
+              "location": "StepDefinitionClass.userShouldClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4412624000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should verify \"Please try again, your credentials are not valid.\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please try again, your credentials are not valid.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitionClass.userShouldVerifyIsDisplayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Verify the Cloud Bank login page",
+    "description": "",
+    "id": "to-verify-the-cloud-bank-login-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/Habile.feature",
+    "tags": []
+  }
+]
